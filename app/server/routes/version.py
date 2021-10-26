@@ -1,14 +1,14 @@
 from fastapi import APIRouter, Body
 from fastapi.encoders import jsonable_encoder
 
-from server.database import (
+from app.server.database import (
     add_version,
     delete_version,
     retrieve_version,
     retrieve_versions,
     update_version,
 )
-from server.models.version import (
+from app.server.models.version import (
     ErrorResponseModel,
     ResponseModel,
     VersionSchema,
