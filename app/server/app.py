@@ -1,6 +1,6 @@
 from fastapi import FastAPI
 
-from server.routes.version import router as VersionRouter
+from app.server.routes.version import router as VersionRouter
 
 app = FastAPI()
 
